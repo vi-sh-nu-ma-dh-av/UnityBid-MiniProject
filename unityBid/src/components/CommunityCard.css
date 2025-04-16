@@ -1,0 +1,19 @@
+.community-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 2rem;
+    border-radius: 10px;
+    width: 83%;
+}
+img{
+    width: 60%;
+}
+
+h4 {
+    color: blueviolet;
+    font-size: 3.2rem;
+    margin: 1rem;
+}

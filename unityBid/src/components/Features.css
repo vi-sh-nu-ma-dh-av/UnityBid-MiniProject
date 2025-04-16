@@ -1,0 +1,217 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 7.5rem;
+    color: white;
+    background: black;
+    padding: 0.7rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .dropdown-toggle:hover {
+    color: rgb(12, 11, 11);
+    background: rgb(70, 64, 64);
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 2px;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown .show {
+    display: block;
+  }
+  
+
+  #close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 2.5rem;
+    background: #3b076e; /* Tomato color for the close button */
+    color: white; /* White color for the close button text */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Rounded close button */
+    text-align: center; /* Center the 'X' within the button */
+}
+#close-btn:hover{
+    background: red;
+}
+
+.modal-head {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.modal-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify; /* Justify text */
+    background: rgb(134, 134, 164);
+    border-radius: 10px;
+    padding-top: 20px;
+
+    overflow: auto;
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.modal-content p{
+    color: black;
+}
+
+
+
+.create-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(134, 134, 164);
+  border-radius: 10px;
+  padding: 0;
+}
+
+.create-content p {
+  padding: 20px;
+}
+
+.create-head {
+  color: black;
+}
+
+.create-form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 1.5rem;
+  width: 80%;
+  padding-bottom: 5px;
+
+}
+
+label{
+  color: #fff;
+  font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.create-form-in {
+  flex: 1;
+  font-size: 0.9rem;
+  color: black;
+  padding: 1rem;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.form-in:focus {
+  background: white;
+  border: none;
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.8); 
+}
+
+.image-in {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 15rem;
+  
+  padding: 0.7rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-button {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 7.5rem;
+  color: white;
+  background: black;
+  padding: 0.7rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.form-button:hover{
+  color: rgb(12, 11, 11);
+  background: rgb(70, 64, 64);
+}
+
+.create-form p {
+  color: black;
+  font-size: 1rem;
+}
+
+.communities-grid { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  width: 100%;
+  height: 80vh;
+  overflow: auto;
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+      display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.communities-grid-item {
+  flex: 0 0 auto;
+  margin: 1em;
+  width: 90%; /* Limit the width of the auction cards */
+}

@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+    /* overflow-y: hidden; */
+}
+
+.bid-main{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    /* align-items: center; */
+}
+
+.bid-container {
+    width: 90%;
+    /* max-width: 1200px; */
+    max-width: 90%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+#currentDateTime,#remainingTime,#startTime,#endTime{
+    font-size: 16px;
+    /* font-weight: 18px; */
+    font-weight: 600;
+}
+
+#img{
+    width: 3%;
+    margin-right: 20px;
+    position: relative;
+    top: 0;
+}
+
+.bid-box1{
+    width: 90%;
+    height: 60px;
+    padding: 15px;
+    font-family:  sans-serif;
+    margin-top: 3%;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bid-box2{
+    width: 90%;
+    height: 50px;
+    padding: 15px;
+    /* margin: 3% 5% 0%; */
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bid-box2-h {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.bid-box3{
+    width: 90%;
+    height: 60px;
+    padding: 10px;
+    background-color:rgb(184 238 255);
+    font-family:  sans-serif;
+    /* margin: 3% 5% 0%; */
+    margin-bottom: 1%;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    /* border-top: 1px solid gray; */
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    line-height: 23px;
+}
+
+.bid-box3 h4,
+.bid-box3 p {
+    display: inline-block; /* Display elements in the same line */
+    margin: 0; /* Remove default margin */
+}
+
+.bid-box3 img {
+    border-radius: 15px;
+}
+
+
+ 
+
+.bid-col1{
+    width: 33.33%;
+}
+.bid-col2{
+    width: 33.33%;
+}
+.bid-col3{
+    width: 33.33%;
+}
+
+.bid-current-extensions {
+    display: flex;
+    flex-direction: row;
+}
+
+.bid-price{
+    width: 100%;
+}
+
+.bid-box4{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    border: 1px solid #dddddd;
+}
+
+.bid-box4 h3,
+.bid-box6 h3{
+    border-left : 2px solid #6c6363;
+    padding-left: 5px;
+}
+.bid-box5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bid-box6{
+    width: 100%;
+    /* height: 30px; */
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    border: 1px solid #dddddd;
+}
+
+.bid-box4,.bid-box6{
+    height: 50px;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+}
+
+th, td {
+    height: 50px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    input{
+        background-color: #f2f2f2;
+    }
+}
+
+td:hover {
+    background-color: #dddddd80;
+}
+
+.bid-box7{
+    margin-top: 4%;
+    padding: 10px 35px 25px;
+    width: 90%;
+    border-radius: 7px;
+    font-size: 800;
+    border: 1px solid #e3cfcf;
+    background-color: #ffeda6;
+    color: #4e3005;
+    display: flex;
+}
+
+.bid-box7 p{
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.bid-diable img, .bid-box3 img{
+    /* padding: 0;
+    margin: 0; */
+    width: 2vw;    /* display: inline-block; */
+    position: relative;
+    top: 9px;
+}
+
+.bid-btn{
+    width: 100%;
+    height: 75%;
+    background-color: rgb(220, 84, 5);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.bid-btn:hover{
+    scale: 1.1;
+}
+
+.bid-tdr input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+#auction div {
+    margin: 10px 0;
+}
+
+.bid-tablebox{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* background-color: #4e3005; */
+}
+
+/* Add CSS for the modal */
+.bid-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bid-modal-content {
+    background-color: #fefefe;
+    margin: 5vh auto;
+    padding: 8px 14px 8px 25px;
+    width: 30vw;
+    height: 26vh;
+}
+
+.bid-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.bid-close:hover,
+.bid-close:focus {
+    color: black;
+    scale: 1.1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#confirmationText{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.bid-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* .buttons:hover{
+    scale: 1.05;
+} */
+
+.bid-yes {
+    background-color: rgb(22, 235, 22);
+    border: 2px solid green;
+    width: 15%;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.bid-no {
+    background-color: rgb(236, 13, 13);
+    border: 2px solid rgb(85, 14, 14);
+    width: 15%;
+    height: 30px;
+    margin: 5%;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.bid-yes:hover, .no:hover {
+    opacity: 0.8;
+    scale: 1.1;
+}
+
+
+.bid-bid-status{
+    width: 90%;
+    height: 7%;
+    padding: 2%;
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-bottom: 1%; */
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bid-box2-h h1{
+        font-size: 30px;
+    }
+
+    .bid-box3 {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .bid-col1,
+    .bid-col2,
+    .bid-col3 {
+        width: 100%;
+    }
+
+
+    .bid-box4,
+    .bid-box6,
+    .bid-box5 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        font-size: 15px;
+    }
+
+
+    /* table {
+        display: flex;
+        flex-direction: row;
+    }
+
+    thead {
+        width: 50%;
+    }
+
+    tbody {
+        width: 50%;
+    }
+
+    .thr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tdr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 7vw;
+    } */
+
+    .bid-modal-content {
+        width: 75vw;
+        height: 25vh;
+    }
+
+    #currentDateTime,
+    #remainingTime,
+    #startTime,
+    #endTime {
+        /* color: green; */
+        font-size: 15px;
+    }
+
+    #img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1142px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bid-box2-h h1{
+        font-size: 40px;
+    }
+
+    .bid-box3 {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .bid-col1,
+    .bid-col2,
+    .bid-col3 {
+        width: 100%;
+    }
+
+
+    .bid-box4,
+    .bid-box6,
+    .bid-box5 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        font-size: 15px;
+    }
+
+
+    /* table {
+        display: flex;
+        flex-direction: row;
+    }
+
+    thead {
+        width: 50%;
+    }
+
+    tbody {
+        width: 50%;
+    }
+
+    .thr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tdr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 2.5vw;
+    } */
+
+    #currentDateTime,
+    #remainingTime,
+    #startTime,
+    #endTime {
+        /* color: red; */
+        font-size: 15px;
+    }
+
+    #img {
+        display: none;
+    }
+
+}
+
+
+            /* newAddd start*/
+@media only screen  and (max-width: 1142px) {
+    #currentDateTime,
+    #remainingTime,
+    #startTime,
+    #endTime,
+    #Current_extensions {
+        /* color: red; */
+        font-size: 12px;
+    }
+
+    .bid-box2-h h1{
+        font-size: 50px;
+    }
+
+    .bid-box4,.bid-box6{
+        width: 50%;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .bid-price{
+        display: flex;
+        /* overflow: scroll; */
+    }
+}
+
+@media only screen and (min-width: 1142px) and (max-width: 1215px) {
+
+    #currentDateTime,
+    #remainingTime,
+    #startTime,
+    #endTime,
+    #Current_extensions {
+        /* color: blue; */
+        font-size: 13px;
+    }
+}
+            /* newAdd ends */
+@media only screen and (min-width: 1215px) and (max-width: 1400px) {
+
+    #currentDateTime,
+    #remainingTime,
+    #startTime,
+    #endTime,
+    #Current_extensions {
+        /* color: rgb(255, 179, 0); */
+        font-size: 14px;
+    }
+}
+
+.bid-table-container {
+    /* overflow-x: auto; */
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .bid-responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bid-responsive-table th, .bid-responsive-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .bid-responsive-table th {
+    background-color: #f2f2f2;
+  }
+  .bid-enable{
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .bid-responsive-table {
+      overflow: hidden;
+      font-size: 12.5px;
+    }
+
+    .bid-box2-h h1{
+        font-size: 20px;
+    }
+
+    .bid-diable{
+        display: none;
+    }
+    .bid-enable{
+        display: inline;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .bid-responsive-table {
+      overflow: hidden;
+      font-size: 12.5px;
+    }
+
+    .bid-box2-h h1{
+        font-size: 15px;
+    }
+
+    .bid-diable{
+        display: none;
+    }
+    .bid-enable{
+        display: inline;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .bid-box2-h h1 {
+        font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .bid-box2-h h1 {
+        font-size: 35px;
+    }
+  }

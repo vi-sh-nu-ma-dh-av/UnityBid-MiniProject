@@ -1,0 +1,54 @@
+.dropdown {
+    position: relative;
+}
+.home-search {
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+
+.home-search:focus{
+    width: 200%;
+}
+
+
+.dropdown-search {
+    color: black;
+    position: absolute;
+    top: 100%;
+    width: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 200px; /* Adjust this value to control the maximum height of the dropdown */
+    overflow-y: auto; /* Add this rule to make the dropdown scrollable */
+    background-color: white;
+    border: solid rgb(98, 95, 95);
+    border-radius: 10px;
+    padding: 0;
+}
+
+
+.home-search:focus ~ .dropdown-search{
+    width: 200%;
+}
+
+
+.dropdown-ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-li {
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
